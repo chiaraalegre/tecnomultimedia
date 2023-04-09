@@ -1,3 +1,5 @@
+//Alumna: Chiara abril alegre, Legajo: 91545/2, Comisión 1, tp0//
+
 PImage img;
 
 void setup() {
