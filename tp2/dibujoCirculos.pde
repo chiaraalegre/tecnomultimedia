@@ -8,9 +8,11 @@ void dibujoCirculos(){
       else
        di=di-2;
    for(int c=0; c<11; c++){
+     if (eliminarCirculos){
       fill(255);
  ellipse(428+f*35, 16+c*37, di, di);
      
    }
   }
-}  
+} 
+}
