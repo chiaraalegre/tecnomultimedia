@@ -2,6 +2,7 @@
 
 PImage f;
 String estado="inicio";
+boolean eliminarCirculos = true;
 
 void setup(){
 size(800,400);
@@ -10,8 +11,8 @@ f = loadImage("foto.jpg");
 
 //variable que retorna un valor 
 float d2(int x){
-   float d=0;
- d = map(x, 400, 800, 0, 9);
+   float d=1;
+ d = map(x, 400, 795, 1, 5); //con map mido la distancia de un punto a otro para crear la ilusion optica
   return d;  
 }
 
@@ -22,11 +23,14 @@ println(mouseX,"x",mouseY,"y");
 dibujoCirculos();
 efecto(estado);
 }
+
  
 void keyPressed(){
  
-  if(key == 'a')
+  if(key == ' ') //cuando apretas (barra espaciadora) vuelve al inicio
    estado="inicio";
-   if(key == 's')
+   if(key == 'a'){
    estado="estado1"; 
+   eliminarCirculos=true; 
 } 
+}
