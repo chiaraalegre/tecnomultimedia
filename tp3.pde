@@ -1,3 +1,4 @@
+//Alumna Chiara Alegre , comision 3 , legajo 91545/2
 PImage[] f = new PImage[8];
 String[] t = new String[13];
 int i,pat,cbtn=2;
